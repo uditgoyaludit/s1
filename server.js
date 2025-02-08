@@ -6,11 +6,11 @@ const fs = require('fs'); // Make sure to require fs to check directory stats
 const app = express();
 
 // Serve static files from the 'public' directory
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, '/')));
 
 // Serve directory listing for all folders inside 'public'
 app.use('/*', (req, res, next) => {
-    const folderPath = path.join(__dirname, 'public', req.params[0]);
+    const folderPath = path.join(__dirname, '/', req.params[0]);
     
     // Check if the path is a directory
     fs.stat(folderPath, (err, stats) => {
