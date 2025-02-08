@@ -1,20 +1,16 @@
 {
-    "name": "express-directory-listing",
-    "version": "1.0.0",
-    "description": "An Express app with directory listing",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.18.2",
-      "serve-index": "^1.10.0",
-      "fs": "0.0.1-security"
-    },
-    "engines": {
-      "node": "16.x"
-    },
-    "author": "Your Name",
-    "license": "MIT"
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "serve-index": "^1.9.1"
   }
-  
+}
